@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>添加用户</title>
+     <meta charset="UTF-8">
+
+    <script type="text/javascript"  th:inline="none">
+
+
+    </script>
+
+<body>
+<form action="/users/registerhtml" method="post">
+    用户姓名：<input type="text" name="name"/><font color="#dc143c" th:errors="${aa.name}"></font> <br/>
+    密码：<input type="text" name="password"/><font color="#dc143c" th:errors="${aa.password}"></font><br/>
+    年龄：<input type="text" name="age"/><font color="#dc143c" th:errors="${aa.age}"></font><br/>
+    地址：<input type="text" name="address"/><font color="#dc143c" th:errors="${aa.address}"></font><br/>
+    <input type="submit" value="确定"/><br/>
+</form>
+
+</body>
+</html>

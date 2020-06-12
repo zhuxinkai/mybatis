@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<script type="text/javascript"  th:inline="none">
+
+
+    </script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+</head>
+<body>
+<form action="/users/editPerson" method="post">
+    用户姓名：<input type="hidden" name="name" th:field="${personback.name}"/><br/>
+    密码：<input type="text" name="password" th:field="${personback.password}"/><br/>
+    年龄：<input type="text" name="age" th:field="${personback.age}"/><br/>
+    地址：<input type="text" name="address" th:field="${personback.address}"/><br/>
+    <input type="submit" value="确定"}/><br/>
+</form>
+
+</body>
+</html>

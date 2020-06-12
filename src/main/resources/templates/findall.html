@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script type="text/javascript"  th:inline="none">
+
+
+    </script>
+<meta charset="UTF-8">
+    <title>查找所有用户列表</title>
+</head>
+<body>
+<table border="1" style="widows: 400px">
+<tr>
+    <th>用户名</th>
+    <th>用户年龄</th>
+    <th>用户地址</th>
+    <th>用户密码</th>
+
+</tr>
+
+
+
+
+    <tr th:each="person : ${list}">
+        <td th:text="${person.name}"></td> </br>
+        <td th:text="${person.age}"></td> </br>
+        <td th:text="${person.address}"></td> </br>
+        <td th:text="${person.password}"></td> </br>
+        </br>
+
+
+    </tr>
+
+
+</table>
+
+
+
+
+
+
+</body>
+</html>
